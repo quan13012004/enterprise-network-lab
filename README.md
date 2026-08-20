@@ -1,5 +1,11 @@
 # Enterprise Network Topology
 
+> 🎬 **[XEM VIDEO DEMO & MINH CHỨNG KẾT QUẢ TRIỂN KHAI TRÊN YOUTUBE](https://youtu.be/387VlL28kno)**
+> 
+> [![YouTube Demo Video](https://img.shields.io/badge/YouTube-Demo%20%26%20Minh%20Ch%E1%BB%A9ng%20K%E1%BA%BFt%20Qu%E1%BA%A3-red?style=for-the-badge&logo=youtube)](https://youtu.be/387VlL28kno)
+
+---
+
 ## 1. Giới thiệu Dự án
 Dự án thiết kế và triển khai hạ tầng mạng doanh nghiệp đa hãng (Cisco, MikroTik, FortiGate) theo mô hình 3 lớp chuẩn, tích hợp cơ chế dự phòng cao và cân bằng tải đa đường WAN.
 
@@ -28,4 +34,7 @@ Dự án thiết kế và triển khai hạ tầng mạng doanh nghiệp đa hã
 - Thư mục configs: Chứa toàn bộ file cấu hình thiết bị gồm CORE5.txt, CORE6.txt, Mikrotik1.rsc, Mikrotik2.rsc, FortiGate.conf, ISP3.txt, ISP4.txt, ISP5.txt, R22.txt và các Access Switch sw7.txt đến sw12.txt.
 - Thư mục topology: Chứa các ảnh sơ đồ tổng quan và sơ đồ chi tiết từng phân vùng mạng.
 
+---
 
+## 5. Video Demo & Minh Chứng Kết Quả
+- **Link Video YouTube**: [https://youtu.be/387VlL28kno](https://youtu.be/387VlL28kno)
