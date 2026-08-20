@@ -1,0 +1,146 @@
+Building configuration...
+
+Current configuration : 1444 bytes
+!
+version 15.7
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname ISP4
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+no aaa new-model
+!
+!
+!
+mmi polling-interval 60
+no mmi auto-configure
+no mmi pvc
+mmi snmp-timeout 180
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+
+
+!
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+redundancy
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface Ethernet0/0
+ ip address 30.0.0.2 255.255.255.252
+ duplex auto
+!
+interface Ethernet0/1
+ ip address 30.0.1.2 255.255.255.252
+ duplex auto
+!
+interface Ethernet0/2
+ ip address 26.0.5.1 255.255.255.252
+ duplex auto
+!
+interface Ethernet0/3
+ ip address 45.0.2.2 255.255.255.252
+ duplex auto
+!
+interface Ethernet1/0
+ ip address 57.10.2.1 255.255.255.252
+ duplex auto
+!
+interface Ethernet1/1
+ no ip address
+ shutdown
+ duplex auto
+!
+interface Ethernet1/2
+ no ip address
+ shutdown
+ duplex auto
+!
+interface Ethernet1/3
+ no ip address
+ shutdown
+ duplex auto
+!
+router bgp 30
+ bgp log-neighbor-changes
+ network 30.0.0.0 mask 255.255.255.252
+ network 30.0.1.0 mask 255.255.255.252
+ network 57.10.2.0 mask 255.255.255.252
+ neighbor 26.0.5.2 remote-as 100
+ neighbor 45.0.2.1 remote-as 20
+!
+ip forward-protocol nd
+!
+!
+no ip http server
+no ip http secure-server
+!
+ipv6 ioam timestamp
+!
+!
+!
+control-plane
+!
+!
+!
+!
+!
+!
+!
+!
+line con 0
+ logging synchronous
+line aux 0
+line vty 0 4
+ login
+ transport input none
+!
+!
+end
