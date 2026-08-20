@@ -1,4 +1,4 @@
-# aug/20/2026 03:08:11 by RouterOS 7.1.1
+# aug/20/2026 13:42:09 by RouterOS 7.1.1
 # software id = 
 #
 /interface vrrp
@@ -78,6 +78,6 @@ add check-gateway=ping disabled=no distance=1 dst-address=0.0.0.0/0 gateway=\
     20.0.1.2 routing-table=to_ISP4 suppress-hw-offload=no
 /routing ospf interface-template
 add area=ospf-area-1 interfaces=ether2
-add area=ospf-area-1 interfaces=ether3
+add area=ospf-area-1 cost=10 interfaces=ether3
 add area=ospf-area-1 interfaces=ether5
 add area=ospf-area-1 interfaces=ether6
